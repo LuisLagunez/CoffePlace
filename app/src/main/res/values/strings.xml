@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">proyecto</string>
+    <string name="email">Correo electrónico</string>
+    <string name="nombre">Nombre completo</string>
+    <string name="password">Contraseña</string>
+    <string name="retypepassword">Confirmar contraseña</string>
+    <string name="passwordOlvidado">¿Olvidaste tu contraseña?</string>
+    <string name="telefono">Número de teléfono</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="registro">REGISTRO</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="registroRedesSociales">También puedes registrarte con</string>
+    <string name="terminos">He leído y estoy de acuerdo con los términos y condiciones.</string>
+    <string name="footer">© 2023 CoffeePlace. Todos los derechos reservados.</string>
+</resources>
