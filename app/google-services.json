@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "288535231102",
+    "project_id": "coffeplace-eddab",
+    "storage_bucket": "coffeplace-eddab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288535231102:android:b060c1b56a8f781e27b62f",
+        "android_client_info": {
+          "package_name": "com.example.proyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288535231102-ie6a563fkli8nbvpb3f7kgt5em4uc88i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP7qeDTzkstEi9dUwgg7rvfHZQyw4wXz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288535231102-ie6a563fkli8nbvpb3f7kgt5em4uc88i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
