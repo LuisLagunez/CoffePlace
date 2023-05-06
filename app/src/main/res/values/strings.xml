@@ -12,4 +12,8 @@
     <string name="registroRedesSociales">También puedes registrarte con</string>
     <string name="terminos">He leído y estoy de acuerdo con los términos y condiciones.</string>
     <string name="footer">© 2023 CoffeePlace. Todos los derechos reservados.</string>
+    <string name="inicio">Inicio</string>
+    <string name="pedido">Pedido</string>
+    <string name="promos">Promos</string>
+    <string name="perfil">Perfil</string>
 </resources>
