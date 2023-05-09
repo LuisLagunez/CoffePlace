@@ -17,5 +17,9 @@
     <string name="promos">Promos</string>
     <string name="promociones">Promociones</string>
     <string name="perfil">Perfil</string>
+    <string name="cumpleanos">Cumpleaños</string>
     <string name="noticias">Noticias</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="cerrarsesion">Cerrar Sesión</string>
+    <string name="editarFotoPerfil">EDITAR FOTO DE PERFIL</string>
 </resources>
