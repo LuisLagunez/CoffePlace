@@ -9,68 +9,136 @@
     tools:context=".VistaUnoUsuarioActivity">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="417dp"
+        android:layout_height="686dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/linearLayout3">
 
             <ImageView
                 android:id="@+id/imglogologin"
                 android:layout_width="match_parent"
-                android:layout_height="152dp"
-                android:layout_marginTop="32dp"
+                android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logo" />
+                app:srcCompat="@drawable/logo"
+                tools:layout_conversion_absoluteHeight="152dp"
+                tools:layout_conversion_absoluteWidth="417dp"
+                tools:layout_editor_absoluteX="-2dp"
+                tools:layout_editor_absoluteY="32dp" />
 
             <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_conversion_absoluteHeight="471dp"
+                tools:layout_conversion_absoluteWidth="417dp"
+                tools:layout_editor_absoluteX="-2dp"
+                tools:layout_editor_absoluteY="208dp">
 
-                <LinearLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:layout_width="150dp"
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        app:srcCompat="@drawable/cafeteria_seis"
+                        tools:layout_conversion_absoluteHeight="214dp"
+                        tools:layout_conversion_absoluteWidth="100dp"
+                        tools:layout_editor_absoluteX="573dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:background="#400000"
-                        android:text="Yes"
-                        android:textColor="#ffffff"></Button>
+                        android:baselineAligned="false"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="@string/noticias"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_conversion_absoluteHeight="24dp"
+                        tools:layout_conversion_absoluteWidth="58dp"
+                        tools:layout_editor_absoluteX="26dp"
+                        tools:layout_editor_absoluteY="16dp" />
 
-                    <Button
-                        android:layout_width="150dp"
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:background="#400000"
-                        android:text="OK"
-                        android:textColor="#ffffff"></Button>
+                        android:baselineAligned="false"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="@string/promociones"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_conversion_absoluteHeight="24dp"
+                        tools:layout_conversion_absoluteWidth="58dp"
+                        tools:layout_editor_absoluteX="26dp"
+                        tools:layout_editor_absoluteY="297dp" />
 
-                    <Button
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:background="#400000"
-                        android:text="Yes"
-                        android:textColor="#ffffff"></Button>
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        app:srcCompat="@drawable/cafeteria_tres"
+                        tools:layout_conversion_absoluteHeight="214dp"
+                        tools:layout_conversion_absoluteWidth="100dp"
+                        tools:layout_editor_absoluteX="567dp"
+                        tools:layout_editor_absoluteY="48dp" />
 
-                    <Button
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:background="#400000"
-                        android:text="OK"
-                        android:textColor="#ffffff"></Button>
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        app:srcCompat="@drawable/cafeteria_dos"
+                        tools:layout_conversion_absoluteHeight="214dp"
+                        tools:layout_conversion_absoluteWidth="100dp"
+                        tools:layout_editor_absoluteX="298dp"
+                        tools:layout_editor_absoluteY="48dp" />
 
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        app:srcCompat="@drawable/cafeteria_uno"
+                        tools:layout_conversion_absoluteHeight="214dp"
+                        tools:layout_conversion_absoluteWidth="100dp"
+                        tools:layout_editor_absoluteX="26dp"
+                        tools:layout_editor_absoluteY="48dp" />
 
-                </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        app:srcCompat="@drawable/cafeteria_cuatro"
+                        tools:layout_conversion_absoluteHeight="214dp"
+                        tools:layout_conversion_absoluteWidth="100dp"
+                        tools:layout_editor_absoluteX="26dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        app:srcCompat="@drawable/cafeteria_cinco"
+                        tools:layout_conversion_absoluteHeight="214dp"
+                        tools:layout_conversion_absoluteWidth="100dp"
+                        tools:layout_editor_absoluteX="298dp"
+                        tools:layout_editor_absoluteY="330dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </HorizontalScrollView>
 
         </LinearLayout>

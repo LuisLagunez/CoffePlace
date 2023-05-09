@@ -15,5 +15,7 @@
     <string name="inicio">Inicio</string>
     <string name="pedido">Pedido</string>
     <string name="promos">Promos</string>
+    <string name="promociones">Promociones</string>
     <string name="perfil">Perfil</string>
+    <string name="noticias">Noticias</string>
 </resources>
