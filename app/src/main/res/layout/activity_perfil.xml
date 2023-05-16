@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,7 +25,6 @@
                 android:id="@+id/tvUsuarioPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/perfil"
                 android:textColor="#000000"
@@ -37,19 +36,21 @@
 
             <ImageView
                 android:id="@+id/tvImagenUsuarioPerfil"
-                android:layout_width="223dp"
-                android:layout_height="158dp"
-                android:layout_marginTop="88dp"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="80dp"
+                android:baselineAligned="false"
                 android:src="@drawable/usuario_perfil"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.428"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/btnEditarFotoUsuarioPerfil"
-                android:layout_width="277dp"
-                android:layout_height="49dp"
-                android:layout_marginTop="28dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/button_rounded"
                 android:backgroundTint="#705C54"
                 android:drawableStart="@drawable/lapiz"
@@ -63,7 +64,7 @@
                 android:id="@+id/tvNombreUsuarioPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:text="@string/nombre"
                 android:textColor="#000000"
                 android:textSize="18sp"
@@ -74,13 +75,12 @@
 
             <EditText
                 android:id="@+id/etNombreUsuarioPerfil"
-                android:layout_width="277dp"
-                android:layout_height="42dp"
-                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.575"
+                app:layout_constraintHorizontal_bias="0.338"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvNombreUsuarioPerfil" />
 
@@ -88,7 +88,6 @@
                 android:id="@+id/tvEmailUsuarioPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:text="@string/email"
                 android:textColor="#000000"
                 android:textSize="18sp"
@@ -99,9 +98,8 @@
 
             <EditText
                 android:id="@+id/etUsuarioPerfil"
-                android:layout_width="277dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
                 android:ems="10"
                 android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -113,7 +111,6 @@
                 android:id="@+id/tvTelefonoUsuarioPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:text="@string/telefono"
                 android:textColor="#000000"
                 android:textSize="18sp"
@@ -124,10 +121,8 @@
 
             <EditText
                 android:id="@+id/etTelefonoUsuarioPerfil"
-                android:layout_width="277dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp"
                 android:ems="10"
                 android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -135,58 +130,35 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvTelefonoUsuarioPerfil" />
 
-            <TextView
-                android:id="@+id/tvCumpleanosUsuarioPerfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/cumpleanos"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.215"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etTelefonoUsuarioPerfil" />
-
-            <EditText
-                android:id="@+id/etCumpleanosUsuarioPerfil"
-                android:layout_width="277dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:ems="10"
-                android:inputType="text"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.348"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvCumpleanosUsuarioPerfil" />
-
             <Button
                 android:id="@+id/btnGuardarCambiosUsuarioPerfil"
-                android:layout_width="277dp"
-                android:layout_height="49dp"
-                android:layout_marginTop="28dp"
+                android:layout_width="231dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="36dp"
                 android:background="@drawable/button_rounded"
                 android:backgroundTint="#705C54"
                 android:text="@string/guardar"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvImagenUsuarioPerfil" />
+                app:layout_constraintTop_toBottomOf="@+id/etTelefonoUsuarioPerfil" />
 
             <Button
                 android:id="@+id/btnCerrarSesionUsuarioPerfil"
                 android:layout_width="150dp"
-                android:layout_height="49dp"
-                android:layout_marginTop="28dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="1000dp"
                 android:background="@drawable/button_rounded"
                 android:backgroundTint="#A82020"
                 android:text="@string/cerrarsesion"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvImagenUsuarioPerfil" />
+                app:layout_constraintTop_toBottomOf="@+id/btnGuardarCambiosUsuarioPerfil" />
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
 
