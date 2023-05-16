@@ -15,7 +15,7 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".LoginNoticias"
+            android:name=".NoticiasActivity"
             android:exported="false" />
         <activity
             android:name=".PerfilActivity"

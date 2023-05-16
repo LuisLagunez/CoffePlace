@@ -20,4 +20,5 @@ public class LoginActivity extends AppCompatActivity {
         Intent siguiente = new Intent(this, RegistroActivity.class);
         startActivity(siguiente);
     }
+
 }
