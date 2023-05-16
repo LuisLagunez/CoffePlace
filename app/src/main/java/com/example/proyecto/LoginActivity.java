@@ -21,4 +21,8 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(siguiente);
     }
 
+    public void Prueba(View view) {
+        Intent prueba = new Intent(this, VistaUnoUsuarioActivity.class);
+        startActivity(prueba);
+    }
 }

@@ -152,6 +152,7 @@
                 android:backgroundTint="#A82020"
                 android:text="@string/cerrarsesion"
                 android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.853"
                 app:layout_constraintStart_toStartOf="parent"
