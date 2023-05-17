@@ -1,36 +1,35 @@
 package com.example.proyecto;
 
-import androidx.annotation.NonNull;
+import static com.example.proyecto.R.id.bregistrologin;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+public class RegistroActivity extends AppCompatActivity implements View.OnClickListener{
 
-public class RegistroActivity extends AppCompatActivity {
-
-    private EditText correo;
-    private EditText contrasena;
-    private EditText contrasenaConfirmacion;
-
+    private EditText correoElectronico;
+    private EditText nombreCompleto;
+    private EditText numeroTelefono;
+    private EditText contrasenia;
+    private Button registrar;
+    private daoUsuario dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-
-        correo = findViewById(R.id.etemailregistro);
-        contrasena = findViewById(R.id.etcontrasenaregistro);
-        contrasenaConfirmacion = findViewById(R.id.etconfirmarcontrasenaregistro);
+        correoElectronico = (EditText)findViewById(R.id.etemailregistro);
+        nombreCompleto = (EditText)findViewById(R.id.etnombreregistro);
+        numeroTelefono = (EditText)findViewById(R.id.etptelefonoregistro);
+        contrasenia = (EditText)findViewById(R.id.etcontrasenaregistro);
+        registrar = (Button)findViewById(R.id.bregistrologin);
+        dao = new daoUsuario(this);
     }
 
     // Método para regresar a activity_login.xml.
@@ -38,5 +37,25 @@ public class RegistroActivity extends AppCompatActivity {
     public void Anterior(View view) {
         Intent anterior = new Intent(this, LoginActivity.class);
         startActivity(anterior);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()) {
+            case R.id.bregistrologin:
+                Usuario u = new Usuario();
+                u.setCorreoElectronico(correoElectronico.getText().toString());
+                u.setNombreCompleto(nombreCompleto.getText().toString());
+                u.setNumeroTelefono(numeroTelefono.getText().toString());
+                u.setContrasenia(contrasenia.getText().toString());
+                if (!u.isNull()) {
+                    Toast.makeText(this, "ERROR: Campos Vacios", Toast.LENGTH_SHORT).show();
+                }else if (dao.insertarUsuario(u)) {
+                    Toast.makeText(this, "Registro Éxitoso", Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(this, "Usuario ya registrado", Toast.LENGTH_SHORT).show();
+                }
+                break;
+        }
     }
 }

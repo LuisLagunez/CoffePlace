@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/etlogologin"
+        android:id="@+id/etcorreologin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -32,6 +32,7 @@
         android:inputType="text"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imglogologin" />
 
@@ -51,10 +52,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etlogologin" />
+        app:layout_constraintTop_toBottomOf="@+id/etcorreologin" />
 
     <Button
-        android:id="@+id/bloginlogin"
+        android:id="@+id/btnlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -70,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etpasswordlogin" />
 
     <Button
-        android:id="@+id/bregistrologin"
+        android:id="@+id/btnregistrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -78,12 +79,12 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded_border"
         android:fontFamily="sans-serif-condensed-medium"
-        android:onClick="Siguiente"
+        android:onClick="Registrar"
         android:text="@string/registrarse"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bloginlogin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
 
     <ImageButton
         android:id="@+id/imgbtnfacebooklogin"
@@ -96,7 +97,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bregistrologin"
+        app:layout_constraintTop_toBottomOf="@+id/btnregistrar"
         app:srcCompat="@drawable/facebook" />
 
     <ImageButton
@@ -111,7 +112,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toEndOf="@+id/imgbtnfacebooklogin"
-        app:layout_constraintTop_toBottomOf="@+id/bregistrologin"
+        app:layout_constraintTop_toBottomOf="@+id/btnregistrar"
         app:srcCompat="@drawable/twitter" />
 
     <ImageButton
@@ -126,7 +127,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imgbtnfacebooklogin"
         app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bregistrologin"
+        app:layout_constraintTop_toBottomOf="@+id/btnregistrar"
         app:srcCompat="@drawable/google" />
 
     <TextView
