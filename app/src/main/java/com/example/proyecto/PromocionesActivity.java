@@ -6,19 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class VistaUnoUsuarioActivity extends AppCompatActivity {
+public class PromocionesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.vista_uno_usuario);
+        setContentView(R.layout.activity_promociones);
     }
-
-    public void VerTodoNoticias(View view) {
-        Intent verTodoNoticias = new Intent(this, NoticiasActivity.class);
-        startActivity(verTodoNoticias);
-    }
-
 
     // Barra de navegación.
     // Método para acceder a vista_uno_usuario.xml.

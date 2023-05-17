@@ -22,6 +22,11 @@ public class PerfilActivity extends AppCompatActivity {
         startActivity(inicio);
     }
 
+    public void Promociones(View view) {
+        Intent promociones = new Intent(this, PromocionesActivity.class);
+        startActivity(promociones);
+    }
+
     public void Perfil(View view) {
         Intent perfil = new Intent(this, PerfilActivity.class);
         startActivity(perfil);

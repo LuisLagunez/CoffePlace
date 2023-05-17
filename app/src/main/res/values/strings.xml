@@ -21,5 +21,6 @@
     <string name="noticias">Noticias</string>
     <string name="guardar">GUARDAR</string>
     <string name="cerrarsesion">Cerrar Sesión</string>
+    <string name="verTodo">Ver Todo</string>
     <string name="editarFotoPerfil">EDITAR FOTO DE PERFIL</string>
 </resources>
