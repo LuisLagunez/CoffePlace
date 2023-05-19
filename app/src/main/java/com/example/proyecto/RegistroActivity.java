@@ -11,25 +11,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class RegistroActivity extends AppCompatActivity implements View.OnClickListener{
+public class RegistroActivity extends AppCompatActivity{
 
-    private EditText correoElectronico;
-    private EditText nombreCompleto;
-    private EditText numeroTelefono;
-    private EditText contrasenia;
-    private Button registrar;
-    private daoUsuario dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-        correoElectronico = (EditText)findViewById(R.id.etemailregistro);
-        nombreCompleto = (EditText)findViewById(R.id.etnombreregistro);
-        numeroTelefono = (EditText)findViewById(R.id.etptelefonoregistro);
-        contrasenia = (EditText)findViewById(R.id.etcontrasenaregistro);
-        registrar = (Button)findViewById(R.id.bregistrologin);
-        dao = new daoUsuario(this);
     }
 
     // Método para regresar a activity_login.xml.
@@ -37,27 +25,5 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
     public void Anterior(View view) {
         Intent anterior = new Intent(this, LoginActivity.class);
         startActivity(anterior);
-    }
-
-    @Override
-    public void onClick(View v) {
-        if (v.getId() == R.id.bregistrologin) {
-            Usuario u = new Usuario();
-            u.setCorreoElectronico(correoElectronico.getText().toString());
-            u.setNombreCompleto(nombreCompleto.getText().toString());
-            u.setNumeroTelefono(numeroTelefono.getText().toString());
-            u.setContrasenia(contrasenia.getText().toString());
-
-            if (u.isNull()) {
-                Toast.makeText(this, "ERROR: Campos Vacíos", Toast.LENGTH_SHORT).show();
-            } else if (dao.insertarUsuario(u)) {
-                Toast.makeText(this, "Registro Éxitoso", Toast.LENGTH_SHORT).show();
-                Intent regresar = new Intent(this, LoginActivity.class);
-                startActivity(regresar);
-                finish();
-            } else {
-                Toast.makeText(this, "Usuario ya registrado", Toast.LENGTH_SHORT).show();
-            }
-        }
     }
 }

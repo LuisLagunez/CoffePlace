@@ -10,21 +10,10 @@ import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText correo;
-    private EditText contrasena;
-    private Button btnEntrar;
-    private Button btnRegistrar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        correo = (EditText)findViewById(R.id.etcorreologin);
-        contrasena = (EditText)findViewById(R.id.etpasswordlogin);
-        btnEntrar = (Button)findViewById(R.id.btnlogin);
-        btnRegistrar = (Button)findViewById(R.id.btnregistrar);
-
-
     }
 
     // Método para acceder al activity de registro.
