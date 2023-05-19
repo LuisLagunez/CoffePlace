@@ -41,21 +41,23 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        switch(v.getId()) {
-            case R.id.bregistrologin:
-                Usuario u = new Usuario();
-                u.setCorreoElectronico(correoElectronico.getText().toString());
-                u.setNombreCompleto(nombreCompleto.getText().toString());
-                u.setNumeroTelefono(numeroTelefono.getText().toString());
-                u.setContrasenia(contrasenia.getText().toString());
-                if (!u.isNull()) {
-                    Toast.makeText(this, "ERROR: Campos Vacios", Toast.LENGTH_SHORT).show();
-                }else if (dao.insertarUsuario(u)) {
-                    Toast.makeText(this, "Registro Éxitoso", Toast.LENGTH_SHORT).show();
-                }else {
-                    Toast.makeText(this, "Usuario ya registrado", Toast.LENGTH_SHORT).show();
-                }
-                break;
+        if (v.getId() == R.id.bregistrologin) {
+            Usuario u = new Usuario();
+            u.setCorreoElectronico(correoElectronico.getText().toString());
+            u.setNombreCompleto(nombreCompleto.getText().toString());
+            u.setNumeroTelefono(numeroTelefono.getText().toString());
+            u.setContrasenia(contrasenia.getText().toString());
+
+            if (u.isNull()) {
+                Toast.makeText(this, "ERROR: Campos Vacíos", Toast.LENGTH_SHORT).show();
+            } else if (dao.insertarUsuario(u)) {
+                Toast.makeText(this, "Registro Éxitoso", Toast.LENGTH_SHORT).show();
+                Intent regresar = new Intent(this, LoginActivity.class);
+                startActivity(regresar);
+                finish();
+            } else {
+                Toast.makeText(this, "Usuario ya registrado", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }
