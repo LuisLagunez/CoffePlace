@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">proyecto</string>
     <string name="email">Correo electrónico</string>
+    <string name="recuerdame">Recuerdame</string>
     <string name="nombre">Nombre completo</string>
     <string name="password">Contraseña</string>
     <string name="retypepassword">Confirmar contraseña</string>
-    <string name="passwordOlvidado">¿Olvidaste tu contraseña?</string>
+    <string name="passwordOlvidado">Recuperar Contraseña</string>
     <string name="telefono">Número de teléfono</string>
     <string name="login">Iniciar Sesión</string>
     <string name="registro">REGISTRO</string>
@@ -24,5 +25,11 @@
     <string name="verTodo">Ver Todo</string>
     <string name="hombre">Hombre</string>
     <string name="mujer">Mujer</string>
+    <string name="comboUADY">Nuevo Combo UADY</string>
+    <string name="comboUADYTexto">¡Descubre el combo perfecto para satisfacer tus antojos! Te presentamos el nuevo e irresistible Frapucchino acompañado de un delicioso Baguete para afrontar el fin de semestre.</string>
+    <string name="comboUMT">Nuevo Combo UMT</string>
+    <string name="comboUMTTexto">Para los amantes del desayuno tradicional ya está disponible el nuevo combo UMT. Unos deliciosos Hot Cakes acompañados de unos ricos huevos estrellados con tocino y fruta.</string>
+    <string name="comboJaguar">Nuevo Combo Jaguar</string>
+    <string name="comboJaguarTexto">Para los amantes del desayuno tradicional ya está disponible el nuevo combo UMT. Unos deliciosos Hot Cakes acompañados de unos ricos huevos estrellados con tocino y fruta.</string>
     <string name="editarFotoPerfil">EDITAR FOTO DE PERFIL</string>
 </resources>

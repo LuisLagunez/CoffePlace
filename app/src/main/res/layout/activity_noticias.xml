@@ -4,8 +4,165 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#dab78d"
-    tools:context=".NoticiasActivity">
+    android:background="#DAB78D"
+    tools:context=".PerfilActivity">
+
+    <ScrollView
+        android:layout_width="417dp"
+        android:layout_height="686dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvUsuarioPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/perfil"
+                android:textColor="#000000"
+                android:textSize="35sp"
+                app:layout_constraintBottom_toTopOf="@+id/tvImagenUsuarioPerfil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/tvImagenUsuarioPerfil"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="80dp"
+                android:baselineAligned="false"
+                android:src="@drawable/usuario_perfil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnEditarFotoUsuarioPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="#705C54"
+                android:drawableStart="@drawable/lapiz"
+                android:text="@string/editarFotoPerfil"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvImagenUsuarioPerfil" />
+
+            <TextView
+                android:id="@+id/tvNombreUsuarioPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/nombre"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.258"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEditarFotoUsuarioPerfil" />
+
+            <EditText
+                android:id="@+id/etNombreUsuarioPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.338"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNombreUsuarioPerfil" />
+
+            <TextView
+                android:id="@+id/tvEmailUsuarioPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.253"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etNombreUsuarioPerfil" />
+
+            <EditText
+                android:id="@+id/etUsuarioPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.34"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmailUsuarioPerfil" />
+
+            <TextView
+                android:id="@+id/tvTelefonoUsuarioPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telefono"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.265"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etUsuarioPerfil" />
+
+            <EditText
+                android:id="@+id/etTelefonoUsuarioPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTelefonoUsuarioPerfil" />
+
+            <Button
+                android:id="@+id/btnGuardarCambiosUsuarioPerfil"
+                android:layout_width="231dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="#705C54"
+                android:text="@string/guardar"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTelefonoUsuarioPerfil" />
+
+            <Button
+                android:id="@+id/btnCerrarSesionUsuarioPerfil"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="#A82020"
+                android:text="@string/cerrarsesion"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.86"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnGuardarCambiosUsuarioPerfil" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomNavigationView"
@@ -27,7 +184,7 @@
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.828"
+            app:layout_constraintHorizontal_bias="0.86"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
@@ -42,7 +199,7 @@
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.601"
+            app:layout_constraintHorizontal_bias="0.653"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
@@ -57,7 +214,7 @@
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintHorizontal_bias="0.374"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
@@ -134,13 +291,5 @@
             app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ESTO ES NOTICIAS"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="138dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
