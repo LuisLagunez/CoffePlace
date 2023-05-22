@@ -25,11 +25,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded_border"
         android:fontFamily="sans-serif-condensed-medium"
-        android:onClick="RegistrarUsuario"
+        android:onClick="Registrar"
         android:text="@string/registrarse"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_social"
         android:scaleType="fitCenter"
@@ -53,11 +53,26 @@
         app:srcCompat="@drawable/facebook" />
 
     <ImageButton
+        android:id="@+id/imgbtngooglelogin2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_social"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtngooglelogin3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvredessocialesregistro"
+        app:srcCompat="@drawable/google" />
+
+    <ImageButton
         android:id="@+id/imgbtngooglelogin5"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_social"
         android:scaleType="fitCenter"
@@ -66,22 +81,6 @@
         app:layout_constraintStart_toEndOf="@+id/imgbtngooglelogin3"
         app:layout_constraintTop_toBottomOf="@+id/tvredessocialesregistro"
         app:srcCompat="@drawable/twitter" />
-
-    <ImageButton
-        android:id="@+id/imgbtngooglelogin2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/button_social"
-        android:onClick="BuscarUsuarios"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/imgbtngooglelogin3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvredessocialesregistro"
-        app:srcCompat="@drawable/google" />
 
     <TextView
         android:id="@+id/tvregistroregistro"
@@ -102,7 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="32dp"
         android:drawableStart="@drawable/nombre"
         android:ems="10"
@@ -167,14 +166,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="180dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/terminos"
+        app:layout_constraintBottom_toTopOf="@+id/tvfooterregistro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etconfirmarcontrasenaregistro" />
+        app:layout_constraintTop_toBottomOf="@+id/rbhombrelogin"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/etemailregistro"
@@ -198,7 +200,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/footer"
         android:textColor="#000000"
@@ -212,7 +214,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/registroRedesSociales"
@@ -222,5 +224,32 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bregistrologin" />
+
+    <RadioGroup
+        android:id="@+id/rdgeneroregistro"
+        android:layout_width="156dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/cbterminosregistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etconfirmarcontrasenaregistro"
+        app:layout_constraintVertical_bias="0.542">
+
+        <RadioButton
+            android:id="@+id/rbmujerlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/mujer" />
+
+        <RadioButton
+            android:id="@+id/rbhombrelogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/hombre" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
