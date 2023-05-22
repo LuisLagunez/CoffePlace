@@ -28,9 +28,9 @@ public class LoginActivity extends AppCompatActivity {
     public void Loguearse(View view) {
 
         String correoIngresado = et_correo.getText().toString();
-        String correoValido = "luislagrod18@gmail.com";
+        String correoValido = "correodeprueba@gmail.com";
         String contraseniaIngresada = et_contrasenia.getText().toString();
-        String contraseniaValida = "ninetails12";
+        String contraseniaValida = "contrasenia";
 
         if(correoIngresado.equals(correoValido) && contraseniaIngresada.equals(contraseniaValida))
         {
