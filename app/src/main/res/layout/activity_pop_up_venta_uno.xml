@@ -21,9 +21,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/textoPedidoNoExistente"
+        android:text="@string/textoPedidoUno"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ConfirmarPedido"
+        android:text="@string/confirmarPedido" />
 
 </LinearLayout>

@@ -14,12 +14,23 @@ public class PromocionesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_promociones);
     }
 
+    // Método para realizar pedido.
+
+    public void RealizarPedido(View view) {
+        Intent realizarPedido = new Intent(this, PopUpVentaUnoActivity.class);
+        startActivity(realizarPedido);
+    }
+
     // Barra de navegación.
-    // Método para acceder a vista_uno_usuario.xml.
 
     public void Inicio(View view) {
         Intent inicio = new Intent(this, VistaPrincipalUsuarioActivity.class);
         startActivity(inicio);
+    }
+
+    public void Pedido(View view) {
+        Intent pedido = new Intent(this, PopUpPedidoActivity.class);
+        startActivity(pedido);
     }
 
     public void Promociones(View view) {

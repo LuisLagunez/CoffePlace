@@ -22,6 +22,11 @@ public class NoticiasActivity extends AppCompatActivity {
         startActivity(inicio);
     }
 
+    public void Pedido(View view) {
+        Intent pedido = new Intent(this, PopUpPedidoActivity.class);
+        startActivity(pedido);
+    }
+
     public void Promociones(View view) {
         Intent promociones = new Intent(this, PromocionesActivity.class);
         startActivity(promociones);

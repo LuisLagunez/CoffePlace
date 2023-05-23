@@ -35,7 +35,10 @@
     <string name="comboProfesor">Nuevo Combo Profesor</string>
     <string name="comboProfesorTexto">El combo Profesor te permitirá desestresarte de la rutina con un rico sandwich con carne de res y un delicioso cafè que te darà las energìas suficiente para continuar el día.</string>
     <string name="editarFotoPerfil">EDITAR FOTO DE PERFIL</string>
-    <string name="textoPedido">En este momento no cuentas con una orden. Para realizar un pedido visita nuestra sección de promociones.</string>
+    <string name="textoPedidoNoExistente">En este momento no cuentas con una orden. Para realizar un pedido visita nuestra sección de promociones.</string>
+    <string name="textoPedidoUno">¿Estás seguro de realizar este pedido? Presiona el botón para confirmar.
+        Costo $65</string>
+    <string name="confirmarPedido">Confirmar</string>
 
     <string name="comboUnoPromociones">Delicioso Café Frío + Croissant</string>
     <string name="comboUnoPromocionesPrecio">$65</string>
