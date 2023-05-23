@@ -18,7 +18,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="800dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
@@ -49,15 +49,16 @@
 
             <Button
                 android:id="@+id/btnEditarFotoUsuarioPerfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_width="291dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="52dp"
                 android:background="@drawable/button_rounded"
                 android:backgroundTint="#705C54"
                 android:drawableStart="@drawable/lapiz"
                 android:text="@string/editarFotoPerfil"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.438"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ivImagenUsuarioPerfil" />
 
@@ -70,7 +71,7 @@
                 android:textColor="#000000"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.258"
+                app:layout_constraintHorizontal_bias="0.26"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnEditarFotoUsuarioPerfil" />
 
@@ -80,8 +81,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
+                android:translationX="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.338"
+                app:layout_constraintHorizontal_bias="0.304"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvNombreUsuarioPerfil" />
 
@@ -103,8 +105,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textEmailAddress"
+                android:translationX="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.34"
+                app:layout_constraintHorizontal_bias="0.304"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvEmailUsuarioPerfil" />
 
@@ -126,16 +129,17 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
+                android:translationX="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintHorizontal_bias="0.304"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvTelefonoUsuarioPerfil" />
 
             <Button
                 android:id="@+id/btnGuardarCambiosUsuarioPerfil"
-                android:layout_width="231dp"
-                android:layout_height="47dp"
-                android:layout_marginTop="36dp"
+                android:layout_width="291dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="112dp"
                 android:background="@drawable/button_rounded"
                 android:backgroundTint="#705C54"
                 android:text="@string/guardar"
@@ -152,6 +156,7 @@
                 android:layout_marginBottom="35dp"
                 android:background="@drawable/button_rounded"
                 android:backgroundTint="#A82020"
+                android:onClick="CerrarSesion"
                 android:text="@string/cerrarsesion"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -159,6 +164,47 @@
                 app:layout_constraintHorizontal_bias="0.86"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnGuardarCambiosUsuarioPerfil" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/fechaNacimiento"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.291"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTelefonoUsuarioPerfil" />
+
+            <EditText
+                android:id="@+id/etFechaPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="text"
+                android:translationX="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.304"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <Button
+                android:id="@+id/btnFechaPerfil"
+                android:layout_width="51dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#DAB78D"
+                android:onClick="AsignarFecha"
+                android:translationX="-15dp"
+                android:translationY="-3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.795"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

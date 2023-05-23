@@ -50,9 +50,9 @@ public class RegistroActivity extends AppCompatActivity{
         if (!nombre.isEmpty() && !correo.isEmpty() && !numero.isEmpty() && !contrasenia.isEmpty()
         && !confirmarContrasenia.isEmpty() && (rb_hombre.isChecked() || rb_mujer.isChecked()) && cb_terminos.isChecked())
         {
-            Toast.makeText(this, "Registro Éxitoso", Toast.LENGTH_SHORT).show();
             Intent anterior = new Intent(this, LoginActivity.class);
             startActivity(anterior);
+            Toast.makeText(this, "Registro Éxitoso", Toast.LENGTH_SHORT).show();
         } else{
             Toast.makeText(this, "Debes llenar todos los campos", Toast.LENGTH_SHORT).show();
         }

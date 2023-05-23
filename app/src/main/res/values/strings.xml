@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">proyecto</string>
     <string name="email">Correo electrónico</string>
+    <string name="fechaNacimiento">Fecha de Nacimiento</string>
     <string name="recuerdame">Recuerdame</string>
     <string name="nombre">Nombre completo</string>
     <string name="password">Contraseña</string>
