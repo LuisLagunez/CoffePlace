@@ -155,6 +155,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="41dp"
             android:background="@mipmap/comida"
+            android:onClick="Pedido"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.062"

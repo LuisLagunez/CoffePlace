@@ -5,8 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class VistaPrincipalUsuarioActivity extends AppCompatActivity {
+
+    private ImageButton imgBtnInfoPopUp;
+    private TextView txtPopUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,15 +23,21 @@ public class VistaPrincipalUsuarioActivity extends AppCompatActivity {
     public void VerTodoNoticias(View view) {
         Intent verTodoNoticias = new Intent(this, NoticiasActivity.class);
         startActivity(verTodoNoticias);
+
+        imgBtnInfoPopUp = findViewById(R.id.imgbtnordenvistauno);
     }
 
 
     // Barra de navegación.
-    // Método para acceder a vista_uno_usuario.xml.
 
     public void Inicio(View view) {
         Intent inicio = new Intent(this, VistaPrincipalUsuarioActivity.class);
         startActivity(inicio);
+    }
+
+    public void Pedido(View view) {
+        Intent pedido = new Intent(this, PopUpPedidoActivity.class);
+        startActivity(pedido);
     }
 
     public void Promociones(View view) {

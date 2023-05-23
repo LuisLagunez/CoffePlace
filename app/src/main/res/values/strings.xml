@@ -34,4 +34,5 @@
     <string name="comboProfesor">Nuevo Combo Profesor</string>
     <string name="comboProfesorTexto">El combo Profesor te permitirá desestresarte de la rutina con un rico sandwich con carne de res y un delicioso cafè que te darà las energìas suficiente para continuar el día.</string>
     <string name="editarFotoPerfil">EDITAR FOTO DE PERFIL</string>
+    <string name="textoPedido">En este momento no cuentas con una orden. Para realizar un pedido visita nuestra sección de promociones.</string>
 </resources>
