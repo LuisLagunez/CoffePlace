@@ -18,7 +18,7 @@ public class NoticiasActivity extends AppCompatActivity {
     // Método para acceder a vista_uno_usuario.xml.
 
     public void Inicio(View view) {
-        Intent inicio = new Intent(this, VistaUnoUsuarioActivity.class);
+        Intent inicio = new Intent(this, VistaPrincipalUsuarioActivity.class);
         startActivity(inicio);
     }
 

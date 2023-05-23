@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -58,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(correoIngresado.equals(correoValido) && contraseniaIngresada.equals(contraseniaValida))
         {
-            Intent prueba = new Intent(this, VistaUnoUsuarioActivity.class);
+            Intent prueba = new Intent(this, VistaPrincipalUsuarioActivity.class);
             startActivity(prueba);
         }
         else if (correoIngresado.equals(correoValido) && !contraseniaIngresada.equals(contraseniaValida))

@@ -24,7 +24,7 @@
             android:name=".PerfilActivity"
             android:exported="false" />
         <activity
-            android:name=".VistaUnoUsuarioActivity"
+            android:name=".VistaPrincipalUsuarioActivity"
             android:exported="false" />
         <activity
             android:name=".RegistroActivity"

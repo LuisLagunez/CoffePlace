@@ -30,6 +30,8 @@
     <string name="comboUMT">Nuevo Combo UMT</string>
     <string name="comboUMTTexto">Para los amantes del desayuno tradicional ya está disponible el nuevo combo UMT. Unos deliciosos Hot Cakes acompañados de unos ricos huevos estrellados con tocino y fruta.</string>
     <string name="comboJaguar">Nuevo Combo Jaguar</string>
-    <string name="comboJaguarTexto">Para los amantes del desayuno tradicional ya está disponible el nuevo combo UMT. Unos deliciosos Hot Cakes acompañados de unos ricos huevos estrellados con tocino y fruta.</string>
+    <string name="comboJaguarTexto">Con el combo Jaguar podrás disfrutar de una comida sana y deliciosa con la cual podrás de una rica ensalada acompañada de papas a la francesa como postre y un delicioso café.</string>
+    <string name="comboProfesor">Nuevo Combo Profesor</string>
+    <string name="comboProfesorTexto">El combo Profesor te permitirá desestresarte de la rutina con un rico sandwich con carne de res y un delicioso cafè que te darà las energìas suficiente para continuar el día.</string>
     <string name="editarFotoPerfil">EDITAR FOTO DE PERFIL</string>
 </resources>
