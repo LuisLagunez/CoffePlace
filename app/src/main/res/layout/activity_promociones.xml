@@ -4,8 +4,353 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#dab78d"
-    tools:context=".PromocionesActivity">
+    android:background="#DAB78D"
+    tools:context=".PerfilActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvUsuarioPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/promociones"
+                android:textColor="#000000"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.027"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="92dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.023"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cafeteria_uno" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="201dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/comboUnoPromociones"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/comboUnoPromocionesPrecio"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                android:translationX="-20dp"
+                android:translationY="-5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:srcCompat="@drawable/cafeteria_dos" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="201dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="52dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/comboDosPromociones"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.233"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/comboDosPromocionesPrecio"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                android:translationX="-20dp"
+                android:translationY="-5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.142"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                app:srcCompat="@drawable/cafeteria_cinco" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="201dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/comboTresPromociones"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:translationX="-35dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/comboTresPromocionesPrecio"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                android:translationX="-20dp"
+                android:translationY="-5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.201"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                app:srcCompat="@drawable/cafeteria_cuatro" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="213dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/comboCuatroPromociones"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                android:translationX="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/comboCuatroPromocionesPrecio"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                android:translationX="-20dp"
+                android:translationY="-5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.184"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                app:srcCompat="@drawable/cafeteria_tres" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="213dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="52dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/comboCincoPromociones"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:translationX="-13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/comboCincoPromocionesPrecio"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                android:translationX="-20dp"
+                android:translationY="-5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.134"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.056"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                app:srcCompat="@drawable/cafeteria_seis" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="213dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="72dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/comboSeisPromociones"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                android:translationX="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/comboSeisPromocionesPrecio"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                android:translationX="-20dp"
+                android:translationY="-5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.091"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.056"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                app:srcCompat="@drawable/cafeteria_siete" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="182dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/comboSietePromociones"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/comboSietePromocionesPrecio"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                android:translationX="-20dp"
+                android:translationY="-10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.152"
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomNavigationView"
@@ -57,7 +402,7 @@
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.403"
+            app:layout_constraintHorizontal_bias="0.374"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
@@ -134,13 +479,5 @@
             app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ESTO ES PROMOCIONES"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="127dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,7 @@
     <string name="hombre">Hombre</string>
     <string name="mujer">Mujer</string>
     <string name="comboUADY">Nuevo Combo UADY</string>
-    <string name="comboUADYTexto">¡Descubre el combo perfecto para satisfacer tus antojos! Te presentamos el nuevo e irresistible Frapucchino acompañado de un delicioso Baguete para afrontar el fin de semestre.</string>
+    <string name="comboUADYTexto">¡Descubre el combo perfecto para satisfacer tus antojos! Te presentamos el nuevo e irresistible CaféProfe acompañado de un delicioso croissant para afrontar el fin de semestre.</string>
     <string name="comboUMT">Nuevo Combo UMT</string>
     <string name="comboUMTTexto">Para los amantes del desayuno tradicional ya está disponible el nuevo combo UMT. Unos deliciosos Hot Cakes acompañados de unos ricos huevos estrellados con tocino y fruta.</string>
     <string name="comboJaguar">Nuevo Combo Jaguar</string>
@@ -36,4 +36,19 @@
     <string name="comboProfesorTexto">El combo Profesor te permitirá desestresarte de la rutina con un rico sandwich con carne de res y un delicioso cafè que te darà las energìas suficiente para continuar el día.</string>
     <string name="editarFotoPerfil">EDITAR FOTO DE PERFIL</string>
     <string name="textoPedido">En este momento no cuentas con una orden. Para realizar un pedido visita nuestra sección de promociones.</string>
+
+    <string name="comboUnoPromociones">Delicioso Café Frío + Croissant</string>
+    <string name="comboUnoPromocionesPrecio">$65</string>
+    <string name="comboDosPromociones">Rica Hamburguesa + Trozos de piña</string>
+    <string name="comboDosPromocionesPrecio">$70</string>
+    <string name="comboTresPromociones">Rebanada de pastel + café al gusto</string>
+    <string name="comboTresPromocionesPrecio">$45</string>
+    <string name="comboCuatroPromociones">Hot Cakes + huevos estrellados + tocino + fruta</string>
+    <string name="comboCuatroPromocionesPrecio">$70</string>
+    <string name="comboCincoPromociones">Caja de Postres</string>
+    <string name="comboCincoPromocionesPrecio">$80</string>
+    <string name="comboSeisPromociones">Deliciosa Ensalada + Aderezos</string>
+    <string name="comboSeisPromocionesPrecio">$50</string>
+    <string name="comboSietePromociones">Sandwich con carne de res + Malteada</string>
+    <string name="comboSietePromocionesPrecio">$85</string>
 </resources>
