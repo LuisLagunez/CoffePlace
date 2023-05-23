@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">proyecto</string>
+    <string name="app_name">Coffee Place</string>
     <string name="email">Correo electrónico</string>
     <string name="fechaNacimiento">Fecha de Nacimiento</string>
     <string name="recuerdame">Recuerdame</string>
